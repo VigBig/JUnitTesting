@@ -6,7 +6,7 @@ public class SquareRootNewtonsMethod {
 
     static double EPSILON = 1E-15;
 
-    public static void sqrt(double c){
+    public static double sqrt(double c){
 
         double t = c;
 
@@ -14,7 +14,8 @@ public class SquareRootNewtonsMethod {
             t = (c/t + t)/2;
         }
 
-        System.out.println("The square root of "+c+" is :"+t);
+        return t;
+
     }
 
     public static void main(String[] args) {
@@ -24,7 +25,8 @@ public class SquareRootNewtonsMethod {
         double num = sc.nextInt();
 
         if(num >=1) {
-            sqrt(num);
+         double sqrt = sqrt(num);
+            System.out.println("The square root of "+num+" is :"+sqrt);
         }
         else{
             System.out.println("Number must be non-negative!");
