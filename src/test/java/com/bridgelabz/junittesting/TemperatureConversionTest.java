@@ -40,12 +40,12 @@ public class TemperatureConversionTest {
     @Test
     public void testTemperatureConversion_0Fahrenheit() {
         double actual = TemperatureConversion.temperatureConversion(0,2);
-        assertEquals(-18.0,actual,0);
+        assertEquals(-17.778,actual,0.00077777777);
     }
 
     @Test
     public void testTemperatureConversion_32Celsius() {
         double actual = TemperatureConversion.temperatureConversion(32,1);
-        assertEquals(90,actual,0);
+        assertEquals(89.6,actual,0);
     }
 }

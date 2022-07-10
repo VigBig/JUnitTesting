@@ -11,10 +11,10 @@ public class TemperatureConversion {
     public static double temperatureConversion(double temp, int choice){
         double conv_value;
         if(choice == 1) {
-            conv_value   = round( (temp * 9/5) + 32 );
+            conv_value   =  (temp * 9/5) + 32 ;
         }
         else{
-            conv_value   = round( (temp -32) * 5/9 );
+            conv_value   =  (temp -32) * 5/9 ;
         }
         return conv_value;
     }
